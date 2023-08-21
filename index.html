@@ -207,21 +207,24 @@
                         <span class="label-text text-xl font-semibold">Have coupon?</span>
                     </label>
                     <form class="input-group">
-                        <input id="inputField" type="text" placeholder="Coupon Code" class="input input-bordered" />
+                        <input id="inputField" type="text" placeholder="Coupon Code" class="input input-bordered" disabled/>
                         <button disabled id="submitButton"
                             class="btn btn-secondary text-white bg-[#E527B2] px-3">Apply</button>
-                        <!-- <p class="hidden">Global Value: <span id="globalValue">-</span></p> -->
+                        <!-- <br>
+                        <p class="text-black">Global Value: <span id="globalValue">-</span></p> -->
                     </form>
+                    <!-- <p class="text-black">Global Value: <span id="globalValue">-</span></p> -->
                 </div>
                 <!-- Purchase -->
                 <div class="bg-white p-5 mt-4 rounded-lg">
                     <div id="selectedElements" class="mb-4">
 
                     </div>
+                    <div class="bg-[#f3f3f3] py-[2px] my-4 hidden" id="line"></div>
                     <h1><span class="text-xl font-semibold">Total price :</span> <span id="total-price">0</span>TK</h1>
                     <h1><span class="text-xl font-semibold">Discount :</span> <span id="discount-price">0</span>TK</h1>
                     <h1><span class="text-xl font-semibold">Total :</span> <span id="final-price">0</span>TK</h1>
-                    <div class="bg-gray-300"></div>
+                    <div class="bg-[#f3f3f3] py-[2px] mt-4"></div>
                     <button disabled onclick="my_modal_1.showModal()" id="purchaseButton"
                         class="btn btn-secondary text-white bg-[#E527B2] w-full mt-4 rounded-lg p-3">Make
                         Purchase

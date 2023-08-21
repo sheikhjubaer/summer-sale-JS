@@ -61,6 +61,8 @@ function getPrice(itemName, price, flag) {
     if(sum >= 200) {
         var submitButton = document.getElementById("submitButton");
         submitButton.disabled = false;
+        var inputField1 = document.getElementById("inputField");
+        inputField1.disabled = false;
     }
 
     var inputField1 = document.getElementById("inputField");
@@ -93,6 +95,9 @@ function createElement(itemName, itemPrice, discount, ultimatePrice, flag) {
         h1.classList.add('mb-1');
         h1.innerHTML = `${count + 1}. ${itemName}`;
         calculationEntry.appendChild(h1);
+
+        const line = document.getElementById('line');
+        line.classList.replace('hidden', 'block');
     }
 
     const totalPrice = document.getElementById('total-price');
